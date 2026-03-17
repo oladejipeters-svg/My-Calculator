@@ -1,0 +1,1 @@
+I designed this calculator to learn about the dynamics of javascript and the use of functions with querySelector. it has several functions and i hope to improve on it.

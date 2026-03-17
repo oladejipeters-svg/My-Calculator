@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <section class="hero">
+      <div class="screen">
+        <div id="equationDisplay">0</div>
+        <div id="solutionDisplay" class="fff">0</div>
+      </div>
+      <div class="button-container">
+
+        <hr />
+
+
+        <li class="has-submenu">
+          <input type="checkbox" id="blog-toggle" class="submenu-toggle" />
+          <label for="blog-toggle" class="arrow-wrapper">
+            <img src="./image_downarrow.png" width="50px" class="arrow-icon" alt="" />
+          </label>
+          <div class="button-holder">
+            <botton id="squareRoot" class="topp"><sup>y</sup>&radic;</botton>
+            <botton id="powerBtn" class="topp">x <sup>2</sup></botton>
+            <botton id="factorial" class="topp">&#33;</botton>
+           </div>
+        </li>
+
+
+        <div class="row1">
+          <button id="clear" class="fnkeys" title="CLEAR">C</button>
+          <button id="undo" class="fnkeys">BACK</button>
+          <button id="percentage" class="fnkeys" title="PERCENT">%</button>
+          <button id="divide" class="fnkeys" title="DIVISION">&#247;</button>
+        </div>
+        <div class="row2">
+          <button id="seven">7</button>
+          <button id="eight">8</button>
+          <button id="nine">9</button>
+          <button id="multiply" class="fnkeys" title="MULTIPLICATION">x</button>
+        </div>
+        <div class="row3">
+          <button id="four">4</button>
+          <button id="five">5</button>
+          <button id="six">6</button>
+          <button id="minus" class="fnkeys" title="SUBTRACTION">&mdash;</button>
+        </div>
+        <div class="row4">
+          <button id="one">1</button>
+          <button id="two">2</button>
+          <button id="three">3</button>
+          <button id="addIt" class="fnkeys" title="ADDITION">+</button>
+        </div>
+        <div class="row5">
+          <button id="zero">0</button>
+          <button id="dott">.</button>
+          <button id="equationSign" class="equalz">=</button>
+        </div>
+        <hr />
+      </div>
+    </section>
+
+
+
+    <script src="./index.js"></script>
+  </body>
+</html>
