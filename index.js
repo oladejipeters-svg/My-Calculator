@@ -5,6 +5,13 @@ const solutionDisplay = document.querySelector("#solutionDisplay");
 const squareRoot = document.querySelector("#squareRoot");
 const powerBtn = document.querySelector("#powerBtn");
 const factorial = document.querySelector("#factorial");
+
+const inverse = document.querySelector("#inverse");
+const parentA = document.querySelector("#parentA");
+const parentB = document.querySelector("#parentB");
+const pie = document.querySelector("#pie");
+const doubleZero = document.querySelector("#doubleZero");
+
 const clear = document.querySelector("#clear");
 const undo = document.querySelector("#undo");
 const percentage = document.querySelector("#percentage");
@@ -37,6 +44,7 @@ function factorialCalc(n) {
   }
   return result;
 }
+
 
 function addValueToScreen(value) {
   emptyArray.push(value);
@@ -111,6 +119,13 @@ document.addEventListener("DOMContentLoaded", () => {
   multiply.addEventListener("click", () => addValueToScreen("*"));
   minus.addEventListener("click", () => addValueToScreen("-"));
   addIt.addEventListener("click", () => addValueToScreen("+"));
+
+  inverse.addEventListener("click", () => addValueToScreen("1/"));
+  parentA.addEventListener("click", () => addValueToScreen("("));
+  parentB.addEventListener("click", () => addValueToScreen(")"));
+  pie.addEventListener("click", () => addValueToScreen("3.142857"));
+  doubleZero.addEventListener("click", () => addValueToScreen("00"));
+
   equationSign.addEventListener("click", () => calculateResult());
   one.addEventListener("click", () => addValueToScreen("1"));
   two.addEventListener("click", () => addValueToScreen("2"));
@@ -128,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!isNaN(key)) {
       addValueToScreen(key); // digits
-    } else if (["+", "-", "*", "/"].includes(key)) {
+    } else if (["+", "-", "*", "(", ")", "/"].includes(key)) {
       addValueToScreen(key); // operators
     } else if (key === ".") {
       addValueToScreen(".");

@@ -87,13 +87,14 @@ button:hover {
     box-shadow: 3px 3px 3px rgb(254, 254, 254);
     padding: 20px 0;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
     justify-content: center;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
     background-color: black;
+    width: 600px;
   }
 
   .fff {
@@ -115,27 +116,27 @@ button:hover {
     margin-right: 25px;
   }
   button {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     width: 90px;
     border-radius: 25px;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
     border: none;
     padding: 10px;
     border: 1px solid rgb(254, 254, 254);
   }
 
   hr {
-    margin: 0 20px;
+    margin: 0 60px;
     border: 1px solid rgb(123, 123, 30);
   }
   .row5 {
-    display: flex;
+    display: flex;    
     justify-content: space-evenly;
-    margin-right: 30px;
+    margin: 5px 40px;
   }
   .equalz {
     padding: 10px 100px;
@@ -160,7 +161,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     width: 440px;
-    height: 50px;
+    height: 45px;
     margin: 0 auto;
     /* border: 3px solid pink; */
     background-color: white;
@@ -225,19 +226,30 @@ button:hover {
 
   .button-holder {
     display: flex;
+    flex-wrap: wrap;
     /* border: 1px solid blue; */
     justify-content: space-evenly;
     margin: 0 20px;
+  }
+  .has-submenu {
+    margin: 0 40px;
   }
 
   .topp {
     color: yellow;
     background-color: rgb(38, 38, 38);
-    font-size: 40px;
+    font-size: 15px;
     padding: 8px 20px;
-    margin: 0 20px;
+    margin: 5px 20px;
     border-radius: 50%;
-    border: 2px solid rgb(108, 108, 5);
+    border: 2px solid rgb(38, 38, 38);
+  }
+
+  .row1,
+  .row2,
+  .row3,
+  .row4 {
+    margin-left: 50px;
   }
 
   .topp:hover {
@@ -265,13 +277,14 @@ button:hover {
     box-shadow: 3px 3px 3px rgb(254, 254, 254);
     padding: 15px 0;
     margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 5px; 
+    margin-bottom: 5px; 
     justify-content: center;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
     background-color: black;
+    width: 600px;
   }
 
   .fff {
@@ -282,6 +295,12 @@ button:hover {
       
   }
 
+  .has-submenu {
+    margin: 0 70px;
+    gap: 54px;
+    margin-bottom: 10px;
+
+  }
   .screen {
     border: 5px solid black;
     margin-left: 25px;
@@ -295,22 +314,23 @@ button:hover {
     margin-right: 25px;
   }
   button {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     width: 90px;
     border-radius: 25px;
-    margin-top: 10px;
+    margin-top: 3px;
     margin-left: 7px;
     margin-right: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     border: none;
-    padding: 8px;
+    padding: 5px;
     border: 2px solid rgb(254, 254, 254);
   }
 
   .row5 {
     display: flex;
     justify-content: space-evenly;
+    margin-right: 80px;
   }
   .equalz {
     padding: 10px 80px;
@@ -333,15 +353,15 @@ button:hover {
   }
 
   hr {
-    margin: 0 20px;
+    margin: 0 90px;
     border: 1px solid rgb(123, 123, 30);
   }
 
   .screen div {
     display: flex;
     flex-direction: column;
-    width: 420px;
-    height: 40px;
+    width: 400px;
+    height: 45px;
     margin: 0 auto;
     /* border: 3px solid pink; */
     background-color: white;
@@ -356,6 +376,14 @@ button:hover {
   .fnkeys:hover {
     background-color: rgb(171, 171, 3);
     border: 1px solid rgb(171, 171, 3);
+  }
+  .row1, 
+  .row2,
+  .row3,
+  .row4,
+  .row5 {
+    margin-left: 55px;
+    
   }
 
   .dropz {
@@ -405,6 +433,7 @@ button:hover {
 
   .button-holder {
     display: flex;
+    flex-wrap: wrap;
     /* border: 1px solid blue; */
     justify-content: space-between;
     margin: 0 20px;
@@ -413,10 +442,10 @@ button:hover {
   .topp {
     color: yellow;
     background-color: rgb(38, 38, 38);
-    font-size: 30px;
-    padding: 8px 20px;
+    font-size: 15px;
+    padding: 5px 20px;
     border-radius: 50%;
-    border: 2px solid rgb(108, 108, 5);
+    border: 2px solid rgb(38, 38, 38);
   }
 
   .topp:hover {
@@ -460,9 +489,7 @@ button:hover {
       "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
       Arial, sans-serif;
       word-break: break-all;
-      /* display: flex;
-      flex-wrap: wrap;
-      width: 20px; */
+      
   }
 
   .screen {
@@ -605,7 +632,8 @@ button:hover {
   }
 
   .button-holder {
-    display: flex;
+    display:flex;
+    flex-wrap: wrap;
     /* border: 1px solid blue; */
     justify-content: space-between;
     margin: 0 20px 0 10px;
@@ -618,7 +646,7 @@ button:hover {
     font-size: 17px;
     padding: 8px 20px;
     border-radius: 50%;
-    border: 2px solid rgb(108, 108, 5);
+    border: 2px solid rgb(38, 38, 38);
     width: px;
   }
   .topp sup {
@@ -628,7 +656,7 @@ button:hover {
   .topp:hover {
     background-color: rgb(62, 61, 61);
     transition: 0.2s;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     cursor: pointer;
   }
   .topp:active {
