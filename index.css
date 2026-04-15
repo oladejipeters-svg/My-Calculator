@@ -545,6 +545,9 @@ button:hover {
     transition: 0.3s;
     cursor: pointer;
   }
+  button.active {
+  background-color: rgb(223, 221, 221); 
+}
   
   hr {
     margin: 0 20px;
@@ -584,9 +587,9 @@ button:hover {
     /* border: 1px solid white; */
   }
 
-  /* .dropz:active {
+  .dropz:active {
     opacity: 0.5;
-  } */
+  }
 
   .dropz {
     /* border: 1px solid red; */
