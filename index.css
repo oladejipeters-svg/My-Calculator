@@ -582,9 +582,9 @@ button:hover {
     /* border: 1px solid white; */
   }
 
-  .dropz:active {
+  /* .dropz:active {
     opacity: 0.5;
-  }
+  } */
 
   .dropz {
     /* border: 1px solid red; */
@@ -599,9 +599,9 @@ button:hover {
     /* border: 1px solid white; */
   }
 
-  .dropz:active {
+  /* .dropz:active {
     opacity: 0.5;
-  }
+  } */
 
   /* Hide the checkbox */
   .submenu-toggle {
@@ -659,7 +659,7 @@ button:hover {
     /* border: 2px solid yellow; */
     cursor: pointer;
   }
-  .topp:active {
+  /* .topp:active {
     opacity: 0.6;
-  }
+  } */
 }
