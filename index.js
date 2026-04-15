@@ -90,6 +90,7 @@ function deleteValue() {
   emptyArray.pop();
   equationDisplay.innerHTML = emptyArray.join("");
 }
+
 document.addEventListener("DOMContentLoaded", () => {
   squareRoot.addEventListener("click", () => {
     const current = emptyArray.join("");
@@ -141,9 +142,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const key = event.key;
 
     if (!isNaN(key)) {
-      addValueToScreen(key);
+      addValueToScreen(key); // digits
     } else if (["+", "-", "*", "(", ")", "/"].includes(key)) {
-      addValueToScreen(key);
+      addValueToScreen(key); // operators
     } else if (key === ".") {
       addValueToScreen(".");
     } else if (key === "Enter" || key === "=") {
@@ -153,22 +154,5 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (key === "Escape") {
       clearScreen();
     }
-  });
-
-  // ---------------------------------------------------------
-  // 🔥 FIX FOR MOBILE: Remove active state immediately
-  // ---------------------------------------------------------
-  document.querySelectorAll("button").forEach((btn) => {
-    btn.addEventListener("touchstart", () => {
-      btn.classList.add("active");
-    });
-
-    btn.addEventListener("touchend", () => {
-      btn.classList.remove("active");
-    });
-
-    btn.addEventListener("touchcancel", () => {
-      btn.classList.remove("active");
-    });
   });
 });
