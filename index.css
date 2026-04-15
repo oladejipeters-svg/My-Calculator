@@ -481,6 +481,7 @@ button:hover {
     flex-direction: column;
     border-radius: 15px;
     background-color: black;
+    transition: background-color 0.2s ease;
   }
 
   .fff {
@@ -517,6 +518,7 @@ button:hover {
     border: none;
     padding: 5px;
     border: 2px solid rgb(254, 254, 254);
+    transition: background-color 0.2s ease;
   }
 
   .row5 {
